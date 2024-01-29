@@ -1,0 +1,110 @@
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #222;
+  margin: 0;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+/* Flex Card UI */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-items {
+  width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  flex: 1;
+  /* width: 400px; */
+  padding: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  height: 530px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 370px; */
+}
+.preview {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.content h2 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.content p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.face {
+  border-radius: 50%;
+  width: 70px;
+}
+.links {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+.links a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.links a:last-child {
+  color: #999;
+}
+
+/* Tablet Break Point */
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .card-items {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .card {
+    flex-basis: 50%;
+  }
+  .preview {
+    width: 100%;
+  }
+}
+
+/* Mobile Break Point */
+@media (max-width: 767px) {
+  section {
+    align-items: flex-start;
+  }
+  .card-items {
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+}
