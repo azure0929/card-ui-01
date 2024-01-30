@@ -1,11 +1,11 @@
 /* Google Web Font */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
   color: #222;
@@ -31,9 +31,8 @@ section {
 }
 .card {
   flex: 1;
-  /* width: 400px; */
   padding: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   height: 530px;
   border-radius: 10px;
   display: flex;
@@ -43,7 +42,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 370px; */
 }
 .preview {
   width: 100%;
